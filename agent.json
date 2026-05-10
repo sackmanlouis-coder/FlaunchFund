@@ -1,10 +1,10 @@
 {
-  "$schema": "https://flaunchfund.xyz/agent.schema.json",
+  "$schema": "https://flaunchfund.vercel.app/agent.schema.json",
   "name": "Flaunch Fund",
   "symbol": "FF",
   "version": "1.0.0",
   "description": "Strategic on-chain reserve of Flaunch-launched coins on Base. The $FF token funds the reserve; Takeover.fun tile holders earn ETH from $FF trading fees and receive Flaunch coin airdrops from the reserve.",
-  "homepage": "https://flaunchfund.xyz",
+  "homepage": "https://flaunchfund.vercel.app",
   "social": {
     "x": "https://x.com/FlaunchFund"
   },
