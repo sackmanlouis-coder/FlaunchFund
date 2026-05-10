@@ -1,0 +1,51 @@
+# Flaunch Fund
+
+> Strategic on-chain reserve of Flaunch-launched coins on the Base blockchain. Funded by the $FF token. Tile holders on the associated Takeover.fun grid earn ETH from $FF Uniswap LP trading fees and receive periodic airdrops of Flaunch coins from the reserve.
+
+Flaunch Fund (token symbol: FF) is a single-purpose treasury that accumulates and stewards coins launched on Flaunch — the leading coin launchpad on Base. The Fund's mission is to support the Flaunch ecosystem with patient, transparent, on-chain capital. It is not a portfolio manager or fund-of-funds; it is a programmatic reserve whose entire balance is held at one auditable address.
+
+## Identity & on-chain facts
+
+- **Network:** Base (Coinbase L2)
+- **Chain ID:** 8453
+- **Reserve wallet (Base):** `0x1Abc2b1086359d70c1293F011571C21496e73Ab9`
+- **Token contract ($FF, ERC-20, Base):** `0xcF14464cB91b78f6725ec1dd3f957222E11dF3F5`
+- **Trade $FF on Flaunch:** https://flaunch.gg/base/coins/0xcF14464cB91b78f6725ec1dd3f957222E11dF3F5
+- **Takeover grid #39 ($FF tiles):** https://takeover.fun/grid/0x107aba3406b3fcb93d1919bfe5c082a5f4d28a22/39
+- **BaseScan token page:** https://basescan.org/token/0xcF14464cB91b78f6725ec1dd3f957222E11dF3F5
+- **BaseScan reserve wallet:** https://basescan.org/address/0x1Abc2b1086359d70c1293F011571C21496e73Ab9
+- **X / Twitter:** https://x.com/FlaunchFund
+
+## Economic flywheel (how value flows)
+
+1. **Volume → Fees.** Every $FF swap on its Uniswap pool on Base generates trading fees, denominated in ETH.
+2. **Fees → Tile holders.** The $FF Uniswap LP is split into a 100-tile grid on Takeover.fun. Tile holders receive their pro-rata share of those ETH fees automatically, on-chain, for as long as they hold.
+3. **Taxes → Fund.** Flaunch Fund earns revenue from taxes on $FF swaps and on Takeover tile transactions (buys/sells of tiles).
+4. **Fund → Ecosystem.** 100% of Fund revenue is redeployed into the reserve, used to buy newer Flaunch launches and bluechip Flaunch-native coins. Capital recirculates inside the ecosystem.
+5. **Reserve → Tile holders.** Periodically, coins from the reserve are airdropped to Takeover tile holders — closing the loop.
+
+## Two passive-income streams for tile holders
+
+- **ETH from LP trading fees** — continuous, pro-rata across the 100 tiles, scales with $FF volume.
+- **Flaunch coin airdrops** — periodic, random distributions from the Flaunch Fund reserve directly to tile holders.
+
+## Why it matters
+
+The Flaunch Fund flywheel turns activity into compounding ecosystem support. Trading drives ETH yield to tile holders. Tile churn and trading taxes fund the reserve. The reserve buys ecosystem coins. Ecosystem coins land back in tile-holder wallets. Every loop strengthens both the reserve and the reward to the people supporting it.
+
+## What an AI agent can do
+
+- Read on-chain state of the reserve wallet and $FF token via standard Base RPC (eth_call, balanceOf, etc.).
+- Quote/swap $FF on Uniswap on Base (router contract addresses on Base).
+- Buy or list tiles on the Takeover.fun grid for $FF (see takeover.fun for protocol contracts).
+- Track airdrops to tile holders by watching ERC-20 Transfer events from the reserve wallet.
+- Use AgentKit, OnchainKit, or Coinbase CDP SDK to compose any of the above.
+
+## Files
+
+- `agent.json` — machine-readable manifest with addresses and capabilities
+- `index.html` — full site with embedded JSON-LD and semantic data attributes
+
+## Disclaimer
+
+Yields and airdrops depend on $FF trading volume, tile ownership, and reserve discretion. They are not guaranteed and are not financial advice. Tile prices and fee distribution are governed by the Takeover.fun protocol on Base. Always verify contract addresses on BaseScan before transacting.
