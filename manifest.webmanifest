@@ -1,0 +1,26 @@
+{
+  "name": "Flaunch Fund",
+  "short_name": "Flaunch Fund",
+  "description": "Strategic Flaunch coin reserve on Base. Earn ETH from $FF trading fees and Flaunch coin airdrops by holding a Takeover tile.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#08070a",
+  "theme_color": "#fe4ab5",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "ff.jpg",
+      "sizes": "1000x1000",
+      "type": "image/jpeg",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["finance", "utilities"],
+  "lang": "en-US"
+}
