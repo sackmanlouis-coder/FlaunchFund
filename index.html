@@ -1,0 +1,2276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Flaunch Fund — Strategic Flaunch Coin Reserve on Base</title>
+
+<!-- ============ AGENT & MACHINE-READABLE METADATA ============ -->
+<meta name="description" content="Flaunch Fund (FF) is a strategic onchain reserve of Flaunch-launched coins on Base. The $FF token funds the reserve; Takeover.fun tile holders earn ETH from $FF trading fees and receive periodic Flaunch coin airdrops from the reserve." />
+<meta name="keywords" content="Flaunch Fund, FF token, Base chain, strategic reserve, Flaunch, Takeover.fun, LP fees, ETH yield, memecoin reserve, DeFi flywheel, passive income, onchain treasury" />
+
+<!-- Browser theming (mobile URL bar, in-wallet browsers) -->
+<meta name="theme-color" content="#fe4ab5" />
+<meta name="color-scheme" content="dark" />
+
+<!-- Canonical -->
+<link rel="canonical" href="https://www.FlaunchFund.com/" />
+
+<!-- Favicons & icons -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="icon" type="image/jpeg" sizes="1000x1000" href="ff.jpg" />
+<link rel="apple-touch-icon" href="ff.jpg" />
+<link rel="manifest" href="manifest.webmanifest" />
+
+<!-- Crypto-specific machine tags (CAIP-19 / EIP-3091 friendly) -->
+<meta name="chain" content="base" />
+<meta name="chain-id" content="8453" />
+<meta name="caip-2" content="eip155:8453" />
+<meta name="token-contract" content="eip155:8453/erc20:0xcF14464cB91b78f6725ec1dd3f957222E11dF3F5" />
+<meta name="token-symbol" content="FF" />
+<meta name="reserve-wallet" content="eip155:8453:0x1Abc2b1086359d70c1293F011571C21496e73Ab9" />
+<meta name="takeover-grid" content="https://takeover.fun/board/0x5089da80219b1d8bdb7020fd93d32fa98b39f38c-20" />
+
+<!-- AI-agent crawler hints -->
+<meta name="robots" content="index, follow" />
+<meta name="ai-content-policy" content="public, citable, agent-readable" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.FlaunchFund.com/" />
+<meta property="og:site_name" content="Flaunch Fund" />
+<meta property="og:title" content="Flaunch Fund — Strategic Flaunch Reserve on Base" />
+<meta property="og:description" content="Onchain reserve of Flaunch coins. Hold a Takeover tile, earn ETH from $FF swap fees, get airdropped Flaunch coins from the reserve." />
+<meta property="og:image" content="https://www.FlaunchFund.com/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Flaunch Fund — Strategic Flaunch Reserve" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@TheFlaunchFund" />
+<meta name="twitter:creator" content="@TheFlaunchFund" />
+<meta name="twitter:title" content="Flaunch Fund — Strategic Flaunch Reserve" />
+<meta name="twitter:description" content="Onchain reserve on Base. $FF token funds it. Tile holders earn ETH + Flaunch coin airdrops." />
+<meta name="twitter:image" content="https://www.FlaunchFund.com/og-image.png" />
+<meta name="twitter:image:alt" content="Flaunch Fund — Strategic Flaunch Reserve" />
+
+<!-- Agent discoverability files -->
+<link rel="alternate" type="text/plain" href="llms.txt" title="LLM-readable summary" />
+<link rel="alternate" type="application/json" href="agent.json" title="Agent manifest" />
+<link rel="sitemap" type="application/xml" href="sitemap.xml" title="Sitemap" />
+
+<!-- ============ STRUCTURED DATA (JSON-LD) ============ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.FlaunchFund.com/#org",
+      "name": "Flaunch Fund",
+      "alternateName": "FF",
+      "url": "https://www.FlaunchFund.com",
+      "logo": "https://www.FlaunchFund.com/ff.jpg",
+      "description": "A strategic onchain reserve of Flaunch-launched coins on the Base blockchain. Funded by the $FF token and Takeover.fun tile activity.",
+      "sameAs": [
+        "https://x.com/TheFlaunchFund",
+        "https://basescan.org/address/0x1Abc2b1086359d70c1293F011571C21496e73Ab9",
+        "https://basescan.org/token/0xcF14464cB91b78f6725ec1dd3f957222E11dF3F5",
+        "https://flaunch.gg/base/coins/0xcF14464cB91b78f6725ec1dd3f957222E11dF3F5",
+        "https://takeover.fun/board/0x5089da80219b1d8bdb7020fd93d32fa98b39f38c-20"
+      ]
+    },
+    {
+      "@type": "FinancialProduct",
+      "@id": "https://www.FlaunchFund.com/#token",
+      "name": "$FF Token",
+      "description": "ERC-20 token on Base that funds the Flaunch Fund strategic reserve. Trading volume generates ETH fees distributed to Takeover tile holders pro-rata.",
+      "category": "Cryptocurrency",
+      "provider": { "@id": "https://www.FlaunchFund.com/#org" },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "blockchain", "value": "Base" },
+        { "@type": "PropertyValue", "name": "chainId", "value": "8453" },
+        { "@type": "PropertyValue", "name": "standard", "value": "ERC-20" },
+        { "@type": "PropertyValue", "name": "contractAddress", "value": "0xcF14464cB91b78f6725ec1dd3f957222E11dF3F5" },
+        { "@type": "PropertyValue", "name": "symbol", "value": "FF" },
+        { "@type": "PropertyValue", "name": "reserveWallet", "value": "0x1Abc2b1086359d70c1293F011571C21496e73Ab9" }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.FlaunchFund.com/#website",
+      "url": "https://www.FlaunchFund.com",
+      "name": "Flaunch Fund",
+      "description": "Strategic Flaunch coin reserve on Base. The $FF token funds the reserve; Takeover.fun tile holders earn ETH from trading fees and receive Flaunch coin airdrops.",
+      "publisher": { "@id": "https://www.FlaunchFund.com/#org" },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to earn from Flaunch Fund",
+      "description": "Two-stream passive income: ETH from $FF Uniswap LP fees plus periodic Flaunch coin airdrops, paid to holders of tiles in the Takeover.fun grid for $FF.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Acquire a tile on the $FF Takeover grid",
+          "url": "https://takeover.fun/board/0x5089da80219b1d8bdb7020fd93d32fa98b39f38c-20",
+          "text": "Buy one of the 144 tiles on Takeover.fun grid #20 for the $FF token. Tiles are tradeable on an open market."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Earn ETH from $FF trading fees",
+          "text": "Every $FF swap on its Uniswap LP generates ETH fees. Tiles automatically receive their pro-rata share, paid out continuously onchain."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Receive Flaunch coin airdrops from the reserve",
+          "text": "Periodically, the Flaunch Fund reserve airdrops Flaunch-launched coins directly to tile holders, completing the flywheel between volume, treasury, and ecosystem support."
+        }
+      ]
+    }
+  ]
+}
+</script>
+<!-- ============ END AGENT METADATA ============ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="ff.jpg" fetchpriority="high">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --pink: #fe4ab5;
+    --pink-hover: #ff2da5;
+    --pink-deep: #d6258f;
+    --pink-soft: rgba(254, 74, 181, 0.12);
+    --pink-tint: rgba(254, 74, 181, 0.06);
+    --line: rgba(254, 74, 181, 0.18);
+    --line-strong: rgba(254, 74, 181, 0.32);
+    --ink: #ffffff;
+    --ink-soft: rgba(255, 255, 255, 0.78);
+    --ink-mute: rgba(255, 255, 255, 0.52);
+    --white: #ffffff;
+    --bg: #08070a;
+    --surface: #0f0d12;
+    --surface-2: #161318;
+    --surface-3: #1c1820;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; overflow-x: hidden; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter Tight', -apple-system, sans-serif;
+    font-size: 15px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+    position: relative;
+  }
+
+  ::selection { background: var(--pink); color: var(--white); }
+
+  /* ============ NAV ============ */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: rgba(8, 7, 10, 0.78);
+    backdrop-filter: saturate(180%) blur(12px);
+    -webkit-backdrop-filter: saturate(180%) blur(12px);
+    border-bottom: 1px solid var(--line);
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .logo-mark {
+    width: 36px; height: 36px;
+    background: var(--pink);
+    border-radius: 8px;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(254, 74, 181, 0.3);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .logo-mark svg {
+    width: 78%;
+    height: 78%;
+    display: block;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 4px;
+    list-style: none;
+    align-items: center;
+  }
+  .nav-links a {
+    color: var(--ink-soft);
+    text-decoration: none;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.15s;
+  }
+  .nav-links a:hover { color: var(--ink); background: var(--pink-tint); }
+
+  .nav-agent {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 6px;
+    color: var(--ink-mute) !important;
+    border: 1px solid var(--line);
+    padding: 7px 12px !important;
+  }
+  .nav-agent::before {
+    content: '◇';
+    color: var(--pink);
+    font-size: 12px;
+    line-height: 1;
+  }
+  .nav-agent:hover {
+    color: var(--pink) !important;
+    border-color: var(--pink);
+    background: transparent !important;
+  }
+  .nav-cta {
+    margin-left: 8px;
+    background: var(--pink) !important;
+    color: var(--white) !important;
+    padding: 9px 16px !important;
+  }
+  .nav-cta:hover { background: var(--pink-hover) !important; }
+
+  .nav-icon {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    padding: 0 !important;
+    color: var(--ink-soft) !important;
+    border: 1px solid var(--line);
+    transition: all 0.15s;
+  }
+  .nav-icon:hover {
+    color: var(--pink) !important;
+    border-color: var(--pink);
+    background: transparent !important;
+  }
+  .nav-icon svg { width: 15px; height: 15px; display: block; }
+
+  /* Hamburger button (hidden on desktop) */
+  .nav-toggle {
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .nav-toggle:hover { border-color: var(--pink); background: var(--surface); }
+  .nav-toggle-bar {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 18px;
+    height: 2px;
+    background: var(--ink);
+    border-radius: 2px;
+    transform: translate(-50%, -50%);
+    transition: transform 0.25s ease, opacity 0.2s ease, top 0.25s ease;
+  }
+  .nav-toggle-bar:nth-child(1) { top: calc(50% - 6px); }
+  .nav-toggle-bar:nth-child(3) { top: calc(50% + 6px); }
+  /* Open state — animate to X */
+  .nav-toggle[aria-expanded="true"] .nav-toggle-bar { background: var(--pink); }
+  .nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  .nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(2) { opacity: 0; }
+  .nav-toggle[aml-expanded="true"] .nav-toggle-bar:nth-child(3),
+  .nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  /* ============ HERO ============ */
+  .hero {
+    position: relative;
+    padding: 96px 40px 120px;
+    text-align: center;
+    overflow: hidden;
+    border-bottom: 1px solid var(--line);
+  }
+
+  /* Subtle radial glow */
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    height: 800px;
+    background:
+      radial-gradient(ellipse at 30% 50%, rgba(254, 74, 181, 0.10) 0%, transparent 55%),
+      radial-gradient(ellipse at 75% 40%, rgba(254, 74, 181, 0.07) 0%, transparent 55%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Faint grid */
+  .hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(var(--line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size: 64px 64px;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.6;
+  }
+
+  .hero-inner { position: relative; z-index: 1; max-width: 980px; margin: 0 auto; }
+
+  .hero-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 24px;
+    margin: 0 auto 36px;
+    display: block;
+    box-shadow:
+      0 4px 16px rgba(254, 74, 181, 0.3),
+      0 16px 48px -8px rgba(254, 74, 181, 0.4);
+    transition: transform 0.4s ease;
+  }
+  .hero-logo:hover {
+    transform: scale(1.04) rotate(-2deg);
+  }
+
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 0 0 3px rgba(254, 74, 181, 0.2); }
+    50% { box-shadow: 0 0 0 6px rgba(254, 74, 181, 0); }
+  }
+
+  .hero-name {
+    font-size: clamp(40px, 6vw, 76px);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.035em;
+    color: var(--ink);
+    margin-bottom: 16px;
+  }
+
+  h1.hero-title {
+    font-size: clamp(24px, 3.75vw, 48px);
+    font-weight: 500;
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    color: var(--ink-soft);
+    margin-bottom: 28px;
+  }
+  h1.hero-title .pink { color: var(--pink); }
+  h1.hero-title .grad {
+    background: linear-gradient(120deg, var(--pink) 0%, #ff8fd0 50%, var(--pink) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  h1.hero-title .pink-white-grad {
+    background: linear-gradient(120deg, var(--pink) 0%, #ffffff 25%, var(--pink) 50%, #ffffff 75%, var(--pink) 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shimmer 3.5s ease-in-out infinite;
+  }
+  @keyframes shimmer {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.001s !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001s !important;
+    }
+    h1.hero-title .pink-white-grad { animation: none; background: var(--pink); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .tile.pulse { animation: none; }
+  }
+
+  .hero-sub {
+    max-width: 620px;
+    margin: 0 auto 44px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--ink-soft);
+    font-weight: 400;
+  }
+
+  .cta-row {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+  .cta-row-secondary {
+    margin-bottom: 0;
+  }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 22px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14.5px;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.18s;
+    border: 1px solid transparent;
+  }
+  .btn.primary {
+    background: var(--pink);
+    color: var(--white);
+    box-shadow: 0 1px 2px rgba(254, 74, 181, 0.3), 0 4px 16px rgba(254, 74, 181, 0.28);
+  }
+  .btn.primary:hover {
+    background: var(--pink-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 24px rgba(254, 74, 181, 0.45);
+  }
+  .btn.secondary {
+    background: var(--surface);
+    color: var(--ink);
+    border-color: var(--line-strong);
+  }
+  .btn.secondary:hover { border-color: var(--pink); color: var(--pink); background: var(--surface-2); }
+  .btn.black {
+    background: #000;
+    color: var(--white);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+  }
+  .btn.black:hover {
+    background: #0a0a0a;
+    border-color: var(--pink);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 20px rgba(254, 74, 181, 0.3);
+  }
+  .btn .arrow { transition: transform 0.2s; }
+  .btn:hover .arrow { transform: translateX(2px); }
+  .btn-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    object-fit: cover;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    flex-shrink: 0;
+    display: block;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    margin: -4px 2px -4px -4px;
+  }
+
+  /* ============ SECTIONS ============ */
+
+  .about-strip {
+    padding: 56px 40px 24px;
+    border-bottom: 1px solid var(--line);
+  }
+  .about-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .about-card {
+    padding: 24px 26px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .about-card:hover {
+    border-color: var(--line-strong);
+    transform: translateY(-2px);
+  }
+  .about-eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--pink);
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  .about-card p {
+    font-size: 14.5px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+  .about-card p strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  .section {
+    padding: 120px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .section-head { margin-bottom: 56px; max-width: 760px; }
+  .section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--pink);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 18px;
+    font-weight: 500;
+  }
+  .section-tag::before {
+    content: '';
+    width: 18px; height: 1px;
+    background: var(--pink);
+  }
+
+  h2.section-title {
+    font-size: clamp(36px, 4.5vw, 56px);
+    font-weight: 500;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+    color: var(--ink);
+    margin-bottom: 18px;
+  }
+  h2.section-title .pink { color: var(--pink); }
+
+  .section-intro {
+    font-size: 17px;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    max-width: 600px;
+  }
+
+  /* ============ PANEL ============ */
+  .panel {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  .panel-header {
+    background: linear-gradient(180deg, var(--surface-2) 0%, var(--surface) 100%);
+    padding: 14px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--ink-mute);
+    border-bottom: 1px solid var(--line);
+  }
+  .panel-header .live {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--pink);
+  }
+  .panel-header .live::before {
+    content: '';
+    width: 6px; height: 6px;
+    background: var(--pink);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(254, 74, 181, 0.25);
+    animation: pulse 2s ease-in-out infinite;
+  }
+  .panel-body { padding: 8px 24px; }
+  .panel-row {
+    display: grid;
+    grid-template-columns: 200px 1fr auto;
+    align-items: center;
+    gap: 24px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .panel-row:last-child { border-bottom: none; }
+  .panel-row-label {
+    font-size: 13px;
+    color: var(--ink-mute);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .panel-row-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    word-break: break-all;
+    color: var(--ink);
+    font-weight: 500;
+  }
+  .panel-row-value.big {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  .panel-row-value.italic {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 16px;
+    color: var(--ink-soft);
+    font-style: normal;
+    font-weight: 400;
+  }
+  .copy-btn {
+    background: var(--surface-2);
+    color: var(--ink-soft);
+    border: 1px solid var(--line-strong);
+    padding: 7px 14px;
+    font-family: inherit;
+    font-size: 12.5px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.15s;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+  }
+  .copy-btn:hover {
+    background: var(--pink-soft);
+    border-color: var(--pink);
+    color: var(--pink);
+  }
+  .copy-btn.copied {
+    background: var(--white);
+    border-color: var(--white);
+    color: var(--bg);
+  }
+  .copy-btn.static { cursor: default; pointer-events: none; }
+  .copy-btn.static:hover { background: var(--surface-2); border-color: var(--line-strong); color: var(--ink-soft); }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 8px;
+    background: var(--pink-tint);
+    color: var(--pink);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+  .badge.solid { background: var(--pink); color: var(--white); }
+  .badge.pink { background: var(--pink-soft); color: var(--pink-deep); }
+  .badge.pink-solid { background: var(--pink); color: var(--white); }
+
+  /* ============ FEATURE CARDS ============ */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 32px 28px;
+    transition: all 0.25s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .card:hover {
+    border-color: var(--pink);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px -8px rgba(254, 74, 181, 0.28);
+  }
+  .card-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--pink);
+    margin-bottom: 24px;
+    letter-spacing: 0.05em;
+  }
+  .card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+  }
+  .card p {
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+  }
+  .card::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 60px; height: 60px;
+    background: radial-gradient(circle at top right, rgba(254, 74, 181, 0.10) 0%, transparent 70%);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .card:hover::after { opacity: 1; }
+
+  /* ============ MECHANICS ============ */
+  .pillars {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 64px;
+    align-items: start;
+  }
+  .pillar-list { list-style: none; }
+  .pillar-list li {
+    padding: 28px 0;
+    border-bottom: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    gap: 24px;
+    align-items: start;
+  }
+  .pillar-list li:first-child { padding-top: 0; }
+  .pillar-list li:last-child { border-bottom: none; }
+  .pillar-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--pink);
+    padding-top: 4px;
+    letter-spacing: 0.05em;
+  }
+  .pillar-title {
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+  }
+  .pillar-desc {
+    font-size: 14.5px;
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+
+  .quote-block {
+    background: var(--pink);
+    color: var(--white);
+    border-radius: 16px;
+    padding: 36px 32px;
+    position: sticky;
+    top: 100px;
+    overflow: hidden;
+    position: relative;
+  }
+  .quote-block::before {
+    content: '';
+    position: absolute;
+    top: -80px; right: -80px;
+    width: 240px; height: 240px;
+    background: radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .quote-mark {
+    font-size: 56px;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.3);
+    margin-bottom: 8px;
+    font-family: Georgia, serif;
+  }
+  .quote-block p {
+    font-size: 22px;
+    line-height: 1.35;
+    margin-bottom: 24px;
+    font-weight: 400;
+    letter-spacing: -0.015em;
+    position: relative;
+  }
+  .quote-attr {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    opacity: 0.8;
+  }
+
+  /* ============ TAKEOVER ============ */
+  .takeover {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .takeover-visual {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    background: #000;
+    padding: 18px;
+    border-radius: 16px;
+    border: 1px solid var(--line);
+    box-shadow: 0 24px 60px -20px rgba(254, 74, 181, 0.4);
+  }
+  /* ============ SUBTLE NAV PRICE TICKER ============ */
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+  .nav-ticker {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 10px 5px 8px;
+    margin-left: 12px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 7px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--ink-mute);
+    text-decoration: none;
+    transition: border-color 0.2s, background 0.2s, opacity 0.2s;
+    line-height: 1;
+    white-space: nowrap;
+    opacity: 0;
+    animation: nav-ticker-fade 0.4s ease 0.6s forwards;
+  }
+  .nav-ticker:hover {
+    border-color: var(--pink);
+    background: var(--surface-2);
+  }
+  .nav-ticker.is-error { opacity: 0.4; }
+  .nav-ticker-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #4ade80;
+    flex-shrink: 0;
+    box-shadow: 0 0 0 2px rgba(74, 222, 128, 0.18);
+    animation: nav-ticker-pulse 2s ease-in-out infinite;
+  }
+  .nav-ticker.is-error .nav-ticker-dot {
+    background: var(--ink-mute);
+    box-shadow: none;
+    animation: none;
+  }
+  .nav-ticker-symbol {
+    color: var(--ink-mute);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+  .nav-ticker-price {
+    color: var(--ink);
+    font-weight: 600;
+  }
+  .nav-ticker-change {
+    font-weight: 500;
+    font-size: 11px;
+  }
+  .nav-ticker-change.up { color: #4ade80; }
+  .nav-ticker-change.down { color: #f87171; }
+  .nav-ticker-change:empty { display: none; }
+  .nav-ticker-change:empty + .nav-ticker-sep { margin-left: 2px; }
+  .nav-ticker-sep {
+    color: var(--ink-mute);
+    opacity: 0.5;
+    margin: 0 2px;
+  }
+  .nav-ticker-mcap-label {
+    color: var(--ink-mute);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    font-size: 11px;
+  }
+  .nav-ticker-mcap {
+    color: var(--ink);
+    font-weight: 600;
+  }
+  @keyframes nav-ticker-fade {
+    to { opacity: 1; }
+  }
+  @keyframes nav-ticker-pulse {
+    0%, 100% { box-shadow: 0 0 0 2px rgba(74, 222, 128, 0.18); }
+    50% { box-shadow: 0 0 0 5px rgba(74, 222, 128, 0); }
+  }
+
+  /* ============ TAKEOVER GRID (12×12) ============ */
+  .takeover-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 3px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 6px;
+    /* Aurora background: drifting pink-magenta blobs */
+    background:
+      radial-gradient(circle at 30% 30%, rgba(254, 74, 181, 0.18), transparent 50%),
+      radial-gradient(circle at 70% 70%, rgba(176, 25, 113, 0.22), transparent 50%),
+      radial-gradient(circle at 50% 50%, rgba(255, 143, 208, 0.10), transparent 60%),
+      #050308;
+  }
+  /* The aurora moves */
+  .takeover-grid::before {
+    content: '';
+    position: absolute;
+    inset: -30%;
+    background:
+      radial-gradient(circle at 30% 30%, rgba(254, 74, 181, 0.25), transparent 40%),
+      radial-gradient(circle at 70% 60%, rgba(255, 77, 198, 0.20), transparent 45%),
+      radial-gradient(circle at 20% 80%, rgba(176, 25, 113, 0.30), transparent 50%);
+    animation: aurora-drift 18s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 0;
+  }
+  @keyframes aurora-drift {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    33% { transform: translate(3%, -2%) rotate(8deg); }
+    66% { transform: translate(-2%, 3%) rotate(-6deg); }
+  }
+
+  .tile {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 2px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    transform-origin: center;
+    z-index: 1;
+    opacity: 0;
+    animation: tile-enter 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation-delay: calc(var(--i, 0) * 6ms);
+  }
+
+  /* Tile shades — light → dark gradient from outer to inner of grid */
+  .tile.dim    { background: rgba(176, 25, 113, 0.35); }
+  .tile.mid    { background: var(--pink-deep); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08); }
+  .tile.warm   { background: linear-gradient(135deg, #c8268a, var(--pink-deep)); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12); }
+  .tile.bright {
+    background: linear-gradient(135deg, var(--pink), #ff8fd0);
+    box-shadow:
+      0 0 10px rgba(255, 143, 208, 0.5),
+      inset 0 1px 0 rgba(255, 255, 255, 0.35),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  }
+  .tile.hot {
+    background: linear-gradient(135deg, #ff8fd0, var(--pink) 45%, #ff4dc6);
+    box-shadow:
+      0 0 18px rgba(254, 74, 181, 0.7),
+      inset 0 1px 0 rgba(255, 255, 255, 0.5),
+      inset 0 -1px 0 rgba(80, 0, 40, 0.2);
+  }
+  .tile.peak {
+    background: linear-gradient(135deg, #ffffff 0%, #ff8fd0 30%, var(--pink) 70%, #ff4dc6 100%);
+    box-shadow:
+      0 0 26px rgba(255, 143, 208, 0.9),
+      0 0 8px rgba(255, 255, 255, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  }
+  .tile.empty { background: rgba(8, 7, 10, 0.85); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04); }
+  .tile.pulse { animation: tile-pulse 2.6s ease-in-out infinite; animation-delay: calc(var(--i, 0) * 6ms + 0.8s); }
+  .tile.flash {
+    animation: tile-flash 1.1s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 5;
+  }
+
+  /* Sparkle dot on the brightest tiles */
+  .tile.peak::after,
+  .tile.hot::after {
+    content: '';
+    position: absolute;
+    top: 22%;
+    left: 22%;
+    width: 30%;
+    height: 30%;
+    background: radial-gradient(circle, rgba(255,255,255,0.7), transparent 70%);
+    border-radius: 50%;
+    animation: sparkle-twinkle 3.4s ease-in-out infinite;
+    pointer-events: none;
+  }
+  .tile.hot::after { opacity: 0.5; animation-duration: 4.2s; }
+
+  @keyframes tile-enter {
+    0%   { opacity: 0; transform: scale(0.3) rotate(-8deg); }
+    60%  { opacity: 1; transform: scale(1.08) rotate(2deg); }
+    100% { opacity: 1; transform: scale(1) rotate(0deg); }
+  }
+  @keyframes tile-pulse {
+    0%, 100% { transform: scale(1); }
+    50%      { transform: scale(0.93); }
+  }
+  @keyframes tile-flash {
+    0%   { transform: scale(1); }
+    15%  { transform: scale(1.6); background: #ffffff; box-shadow: 0 0 32px 6px rgba(255, 255, 255, 0.95), 0 0 56px 12px rgba(254, 74, 181, 0.6); }
+    40%  { transform: scale(1.25); background: #ff8fd0; box-shadow: 0 0 22px rgba(254, 74, 181, 0.8); }
+    100% { transform: scale(1); box-shadow: 0 0 8px rgba(254, 74, 181, 0.3); }
+  }
+  @keyframes sparkle-twinkle {
+    0%, 100% { opacity: 0; transform: scale(0.5); }
+    50%      { opacity: 1; transform: scale(1); }
+  }
+
+  /* Outer halo around the whole visual */
+  .takeover-visual::before {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border-radius: 19px;
+    background: linear-gradient(135deg, rgba(254, 74, 181, 0.6), transparent 35%, transparent 65%, rgba(254, 74, 181, 0.6));
+    opacity: 0.3;
+    transition: opacity 0.4s;
+    z-index: -1;
+    filter: blur(10px);
+    pointer-events: none;
+    animation: halo-breathe 6s ease-in-out infinite;
+  }
+  .takeover-visual:hover::before { opacity: 0.9; }
+  @keyframes halo-breathe {
+    0%, 100% { filter: blur(10px); opacity: 0.3; }
+    50%      { filter: blur(14px); opacity: 0.55; }
+  }
+
+  /* Diagonal scanline sweep */
+  .takeover-grid::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(115deg, transparent 38%, rgba(255, 255, 255, 0.08) 50%, transparent 62%);
+    pointer-events: none;
+    animation: grid-sweep 7s ease-in-out infinite;
+    z-index: 2;
+    mix-blend-mode: overlay;
+  }
+  @keyframes grid-sweep {
+    0%, 100% { transform: translateX(-40%); opacity: 0; }
+    40%      { opacity: 1; }
+    60%      { opacity: 1; }
+    100%     { transform: translateX(40%); opacity: 0; }
+  }
+  .takeover-overlay {
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
+    right: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    background: rgba(5, 3, 8, 0.94);
+    border: 1px solid var(--line-strong);
+    color: var(--ink);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    border-radius: 8px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 24px -8px rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    white-space: nowrap;
+  }
+  .takeover-overlay > span { display: inline-flex; align-items: center; gap: 6px; min-width: 0; }
+  .takeover-overlay .grid-num { color: var(--pink); font-weight: 600; }
+  .takeover-overlay .live-text { color: var(--pink); display: inline-flex; align-items: center; gap: 6px; }
+  .takeover-overlay .live-text::before {
+    content: '';
+    width: 5px; height: 5px;
+    background: var(--pink);
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px rgba(254, 74, 181, 0.25);
+  }
+
+  .takeover-content h3 {
+    font-size: clamp(28px, 3.5vw, 40px);
+    font-weight: 500;
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    margin-bottom: 18px;
+    color: var(--ink);
+  }
+  .takeover-content h3 .pink { color: var(--pink); }
+  .takeover-content > p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    margin-bottom: 24px;
+  }
+
+  .fee-flow {
+    display: flex;
+    gap: 0;
+    margin: 28px 0;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .fee-step {
+    flex: 1;
+    padding: 18px 16px;
+    border-right: 1px solid var(--line);
+    position: relative;
+  }
+  .fee-step:last-child { border-right: none; }
+  .fee-step::after {
+    content: '→';
+    position: absolute;
+    right: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--pink);
+    font-size: 14px;
+    background: var(--surface);
+    padding: 0 3px;
+    z-index: 2;
+    line-height: 1;
+  }
+  .fee-step:last-child::after { display: none; }
+  .fee-step-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--pink);
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+  .fee-step-text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: var(--ink);
+    letter-spacing: -0.005em;
+  }
+
+  .fine-print {
+    margin-top: 20px;
+    font-size: 13px;
+    color: var(--ink-mute);
+    line-height: 1.6;
+    padding-left: 12px;
+    border-left: 2px solid var(--line-strong);
+  }
+  .fine-print strong { color: var(--ink-soft); font-weight: 500; }
+
+  .airdrop-callout {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 18px 20px;
+    background: linear-gradient(135deg, rgba(254, 74, 181, 0.12) 0%, rgba(254, 74, 181, 0.04) 100%);
+    border: 1px solid var(--line-strong);
+    border-radius: 12px;
+    margin: 24px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .airdrop-callout::before {
+    content: '';
+    position: absolute;
+    top: -40px; right: -40px;
+    width: 120px; height: 120px;
+    background: radial-gradient(circle, rgba(254, 74, 181, 0.18) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .airdrop-icon {
+    flex-shrink: 0;
+    width: 36px; height: 36px;
+    background: var(--pink);
+    color: var(--bg);
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 1;
+    box-shadow: 0 4px 16px rgba(254, 74, 181, 0.4);
+  }
+  .airdrop-text {
+    flex: 1;
+    position: relative;
+  }
+  .airdrop-text strong {
+    display: block;
+    font-size: 14px;
+    color: var(--pink);
+    font-family: 'JetBrains Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  .airdrop-text p {
+    font-size: 14.5px;
+    line-height: 1.5;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+
+  /* ============ FOOTER ============ */
+  footer {
+    background: var(--surface);
+    color: var(--ink-soft);
+    padding: 80px 40px 32px;
+    border-top: 1px solid var(--line);
+    position: relative;
+    overflow: hidden;
+  }
+  footer::before {
+    content: '';
+    position: absolute;
+    top: -200px; left: 50%;
+    transform: translateX(-50%);
+    width: 1000px; height: 400px;
+    background: radial-gradient(ellipse, rgba(254, 74, 181, 0.28) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .footer-inner { max-width: 1200px; margin: 0 auto; position: relative; }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 56px;
+    padding-bottom: 56px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .footer-brand .logo { color: var(--white); margin-bottom: 16px; }
+  .footer-brand p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    max-width: 360px;
+    line-height: 1.65;
+  }
+  .footer-social {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 18px;
+    padding: 9px 14px;
+    background: transparent;
+    color: var(--ink-soft);
+    text-decoration: none;
+    border: 1px solid var(--line-strong);
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.15s;
+  }
+  .footer-social:hover {
+    color: var(--white);
+    background: var(--pink);
+    border-color: var(--pink);
+  }
+  .footer-social svg { width: 13px; height: 13px; display: block; }
+  .footer-col h4 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11.5px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 18px;
+    font-weight: 500;
+  }
+  .footer-col ul { list-style: none; }
+  .footer-col li { margin-bottom: 10px; }
+  .footer-col a {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.15s;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 1px;
+  }
+  .footer-col a:hover { color: var(--white); border-bottom-color: var(--pink); }
+  .footer-disclosure li {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 14px;
+    cursor: default;
+  }
+
+  .footer-bottom {
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11.5px;
+    letter-spacing: 0.06em;
+    color: rgba(255, 255, 255, 0.4);
+  }
+  .footer-bottom .built-on {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .footer-bottom .built-on .built-mark {
+    width: 14px; height: 14px;
+    background: #0052ff;
+    border-radius: 3px;
+    display: inline-block;
+  }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 900px) {
+    nav { padding: 14px 16px; gap: 12px; }
+
+    /* Show hamburger; transform nav-links into a drawer */
+    .nav-toggle { display: block; }
+
+    .nav-links {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 4px;
+      padding: 14px;
+      background: var(--bg);
+      border-bottom: 1px solid var(--line);
+      box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.7);
+      max-height: calc(100vh - 60px);
+      overflow-y: auto;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-8px);
+      transition: opacity 0.2s ease, transform 0.25s ease, visibility 0s linear 0.25s;
+    }
+    .nav-links.is-open {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+      transition: opacity 0.25s ease, transform 0.3s ease, visibility 0s;
+    }
+    .nav-links li { width: 100%; }
+    .nav-links a {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 14px 16px;
+      font-size: 15px;
+      border-radius: 10px;
+      color: var(--ink) !important;
+    }
+    .nav-links a:hover { background: var(--surface) !important; color: var(--pink) !important; }
+
+    /* Override pill-style nav-agent for mobile drawer */
+    .nav-agent {
+      border: 1px solid var(--line) !important;
+      gap: 10px;
+    }
+    .nav-agent::before { font-size: 14px; }
+
+    /* X icon: full-width pill in drawer */
+    .nav-icon {
+      width: 100% !important;
+      height: auto !important;
+      gap: 12px;
+      padding: 14px 16px !important;
+      justify-content: flex-start !important;
+      border-radius: 10px;
+      color: var(--ink) !important;
+    }
+    .nav-icon::after {
+      content: 'Follow on X';
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .nav-icon svg { width: 16px; height: 16px; }
+
+    /* Earn CTA inside drawer */
+    .nav-cta {
+      justify-content: center !important;
+      margin-top: 6px;
+      padding: 14px 16px !important;
+      font-size: 15px !important;
+    }
+
+    .hero { padding: 64px 20px 80px; }
+    .section { padding: 80px 20px; }
+    .about-strip { padding: 40px 20px 16px; }
+    .about-inner { grid-template-columns: 1fr; gap: 14px; }
+
+    /* Nav ticker — visible on mobile, but tighter */
+    .nav-ticker {
+      padding: 4px 8px 4px 7px;
+      margin-left: 8px;
+      font-size: 11px;
+      gap: 5px;
+      border-radius: 6px;
+    }
+    .nav-ticker-dot { width: 5px; height: 5px; }
+    .nav-ticker-change { font-size: 10px; }
+    .nav-ticker-mcap-label { font-size: 10px; }
+
+    h1.hero-title { font-size: clamp(20px, 5.5vw, 32px); }
+    .hero-name { font-size: clamp(34px, 9vw, 52px); }
+    .hero-logo { width: 96px; height: 96px; border-radius: 20px; margin-bottom: 28px; }
+    h2.section-title { font-size: clamp(30px, 7vw, 42px); }
+
+    /* Panels — long addresses must wrap, never overflow */
+    .panel-row { grid-template-columns: 1fr; gap: 8px; padding: 18px 0; }
+    .panel-row-label { flex-wrap: wrap; }
+    .panel-body { padding: 4px 20px; }
+    .panel-row-value { font-size: 12.5px; word-break: break-all; overflow-wrap: anywhere; }
+    .panel-row-value.big { font-size: 20px; word-break: break-word; }
+    .copy-btn { align-self: flex-start; }
+
+    .cards-grid { grid-template-columns: 1fr; }
+    .pillars { grid-template-columns: 1fr; gap: 40px; }
+    .quote-block { position: static; }
+    .quote-block p { font-size: 19px; }
+
+    .takeover { grid-template-columns: 1fr; gap: 40px; }
+    .takeover-content h3 { font-size: clamp(24px, 6.5vw, 34px); }
+
+    .fee-flow { flex-direction: column; }
+    .fee-step { border-right: none; border-bottom: 1px solid var(--line); }
+    .fee-step:last-child { border-bottom: none; }
+    .fee-step::after { content: '↓'; right: 50%; top: auto; bottom: -8px; transform: translateX(50%); }
+
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+    .footer-bottom { flex-direction: column; gap: 12px; align-items: flex-start; }
+  }
+
+  @media (max-width: 640px) {
+    /* Tight space — hide the "Flaunch Fund" brand text, keep the logo mark.
+       This frees ~120px for the ticker. */
+    .logo { gap: 0; font-size: 0; }
+    .logo-mark { margin-right: 0; }
+    /* But still announce the brand to screen readers */
+    .logo::after { content: ""; }
+  }
+
+  @media (max-width: 480px) {
+    nav { padding: 12px 14px; }
+    /* logo text stays hidden from 640px rule above; only adjust the mark size */
+    .logo-mark { width: 30px; height: 30px; }
+    .nav-icon { width: 32px; height: 32px; }
+    .nav-cta { padding: 7px 12px !important; font-size: 13px; }
+
+    /* On phones, the ticker only shows price + MC value — drop change% + labels */
+    .nav-ticker { padding: 4px 7px; font-size: 10.5px; margin-left: 6px; }
+    .nav-ticker-symbol { display: none; }
+    .nav-ticker-change { display: none; }
+    .nav-ticker-mcap-label { display: none; }
+    .nav-ticker-sep { display: none; }
+    .nav-ticker-mcap::before { content: "MC "; opacity: 0.5; font-weight: 500; }
+
+    .hero { padding: 48px 16px 64px; }
+    .section { padding: 64px 16px; }
+
+    .cta-row { gap: 10px; }
+    .btn { padding: 12px 18px; font-size: 14px; }
+
+    .panel-body { padding: 4px 16px; }
+    .panel-header { padding: 12px 16px; font-size: 11px; }
+    .panel-row-value { font-size: 12px; }
+
+    .card { padding: 26px 22px; }
+    .takeover-visual { padding: 12px; }
+    .takeover-overlay { left: 12px; right: 12px; bottom: 12px; padding: 8px 10px; font-size: 10px; }
+
+    .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- SVG symbol library (deduplicated) -->
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute; width:0; height:0; overflow:hidden;" aria-hidden="true">
+  <defs>
+    <symbol id="ff-logo" viewBox="0 0 657 429">
+      <polygon points="98,429 0,427 1,8 100,104 101,181 278,181 353,279 101,281" fill="#000"/>
+      <polygon points="465,281 402,280 402,3 466,65 468,117 583,117 632,180 468,183" fill="#000"/>
+      <polygon points="387,104 116,102 189,4 388,4 391,97" fill="#000"/>
+      <polygon points="656,66 478,64 526,0 650,0 657,2" fill="#000"/>
+    </symbol>
+    <symbol id="x-logo" viewBox="0 0 24 24">
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="currentColor"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============ AGENT CONTEXT (visible to AI agents and assistive tech) ============ -->
+<div id="agent-context" role="region" aria-label="Machine-readable platform summary" style="position:absolute; left:-99999px; width:1px; height:1px; overflow:hidden;">
+  <h1>Flaunch Fund — Machine-Readable Summary</h1>
+  <p><strong>What this is:</strong> Flaunch Fund is a strategic onchain reserve of Flaunch-launched coins on the Base blockchain (chain ID 8453). It is funded by activity around the $FF ERC-20 token and the Takeover.fun grid associated with it.</p>
+  <p><strong>Core addresses:</strong></p>
+  <ul>
+    <li>Reserve wallet (Base): 0x1Abc2b1086359d70c1293F011571C21496e73Ab9</li>
+    <li>$FF token contract (Base, ERC-20): 0xcF14464cB91b78f6725ec1dd3f957222E11dF3F5</li>
+    <li>Takeover.fun grid #20 (associated $FF tile market): https://takeover.fun/board/0x5089da80219b1d8bdb7020fd93d32fa98b39f38c-20</li>
+    <li>Trade $FF on Flaunch: https://flaunch.gg/base/coins/0xcF14464cB91b78f6725ec1dd3f957222E11dF3F5</li>
+    <li>Block explorer (BaseScan): https://basescan.org/token/0xcF14464cB91b78f6725ec1dd3f957222E11dF3F5</li>
+    <li>Twitter/X: https://x.com/TheFlaunchFund</li>
+  </ul>
+  <p><strong>Economic flywheel (how value flows):</strong></p>
+  <ol>
+    <li>Trading volume on the $FF Uniswap LP generates trading fees denominated in ETH.</li>
+    <li>The $FF Takeover.fun grid divides the LP into 144 tiles. Tile holders earn their pro-rata share of those ETH fees, paid out continuously onchain — passive income in ETH.</li>
+    <li>Flaunch Fund earns revenue from taxes on $FF swaps and on Takeover tile transactions.</li>
+    <li>100% of that revenue is redeployed into the reserve to accumulate newer Flaunch launches and bluechip Flaunch-native coins.</li>
+    <li>Periodically, the Flaunch Fund reserve airdrops Flaunch coins directly to Takeover tile holders — completing the loop and sharing ecosystem upside with tile-holding participants.</li>
+  </ol>
+  <p><strong>Two passive-income streams for tile holders:</strong> (a) ETH from $FF LP trading fees, paid pro-rata; (b) Periodic random airdrops of Flaunch coins from the reserve.</p>
+  <p><strong>Risk / disclaimer:</strong> Yields and airdrops depend on $FF trading volume, tile ownership, and reserve discretion, and are not guaranteed. This is not financial advice. Tile prices and fee distribution are governed by the Takeover.fun protocol on Base.</p>
+  <p><strong>For agent integrations:</strong> See <a href="agent.json">/agent.json</a> and <a href="llms.txt">/llms.txt</a> for structured manifests.</p>
+</div>
+<!-- ============ END AGENT CONTEXT ============ -->
+
+
+<!-- NAV -->
+<nav>
+  <div class="nav-left">
+    <a href="#" class="logo">
+      <span class="logo-mark" aria-label="Flaunch Fund">
+        <svg viewBox="0 0 657 429" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use href="#ff-logo"/></svg>
+      </span>
+      Flaunch Fund
+    </a>
+
+    <!-- Subtle $FF price + market cap ticker — top-left in nav -->
+    <a href="https://flaunch.gg/base/coins/0xcF14464cB91b78f6725ec1dd3f957222E11dF3F5"
+       target="_blank" rel="noopener"
+       class="nav-ticker"
+       id="nav-ticker"
+       aria-label="Live $FF price and market cap"
+       title="Live $FF data · Click to trade">
+      <span class="nav-ticker-dot" aria-hidden="true"></span>
+      <span class="nav-ticker-symbol">$FF</span>
+      <span class="nav-ticker-price" id="nav-ticker-price">—</span>
+      <span class="nav-ticker-change" id="nav-ticker-change"></span>
+      <span class="nav-ticker-sep" aria-hidden="true">·</span>
+      <span class="nav-ticker-mcap-label">MC</span>
+      <span class="nav-ticker-mcap" id="nav-ticker-mcap">—</span>
+    </a>
+  </div>
+
+  <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+    <span class="nav-toggle-bar"></span>
+    <span class="nav-toggle-bar"></span>
+    <span class="nav-toggle-bar"></span>
+  </button>
+  <ul class="nav-links" id="primary-nav">
+    <li><a href="AGENT_GUIDE.html" target="_blank" rel="noopener" class="nav-agent">AI Agent Guide</a></li>
+    <li><a href="#thesis">Thesis</a></li>
+    <li><a href="#mechanics">How it works</a></li>
+    <li><a href="#token">Token</a></li>
+    <li><a href="#reserve">Reserve</a></li>
+    <li>
+      <a href="https://x.com/TheFlaunchFund" target="_blank" rel="noopener" class="nav-icon" aria-label="Follow Flaunch Fund on X">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use href="#x-logo"/></svg>
+      </a>
+    </li>
+    <li><a href="#takeover" class="nav-cta">Earn</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <img src="ff.jpg" alt="Flaunch Fund" class="hero-logo" />
+    <div class="hero-name">Flaunch Fund</div>
+    <h1 class="hero-title">
+      <span class="pink-white-grad">Strategic Flaunch Reserve</span>
+    </h1>
+    <p class="hero-sub">
+      Built on <span style="color:#0052ff; font-weight:600;">Base</span>. Born on <span style="color:var(--pink); font-weight:600;">Flaunch</span>. Powered by <span style="color:#ff2d2d; font-weight:600;">Takeover</span>.
+    </p>
+    <div class="cta-row">
+      <a href="https://flaunch.gg/base/coins/0xcF14464cB91b78f6725ec1dd3f957222E11dF3F5" target="_blank" rel="noopener" class="btn black"><img class="btn-icon" src="ff.jpg" alt="" aria-hidden="true" />Trade $FF on Flaunch <span class="arrow">↗</span></a>
+      <a href="https://takeover.fun/board/0x5089da80219b1d8bdb7020fd93d32fa98b39f38c-20" target="_blank" rel="noopener" class="btn black"><img class="btn-icon" src="takeover.png" alt="" aria-hidden="true" />Takeover Grid <span class="arrow">↗</span></a>
+    </div>
+    <div class="cta-row cta-row-secondary">
+      <a href="#reserve" class="btn primary">View the Reserve <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT (quick-facts strip) -->
+<section class="about-strip" aria-label="At a glance">
+  <div class="about-inner">
+    <div class="about-card">
+      <div class="about-eyebrow">What it is</div>
+      <p>An onchain reserve of Flaunch coins on Base, funded by activity around the <strong>$FF</strong> token.</p>
+    </div>
+    <div class="about-card">
+      <div class="about-eyebrow">How you earn</div>
+      <p>Hold a tile on the <strong>Takeover grid</strong> and earn <strong>ETH</strong> from $FF trading fees, plus periodic Flaunch coin airdrops.</p>
+    </div>
+    <div class="about-card">
+      <div class="about-eyebrow">Why it works</div>
+      <p>Volume → ETH for tile holders. Trade taxes → reserve. Reserve → airdrops back to tiles. A flywheel for the ecosystem.</p>
+    </div>
+  </div>
+</section>
+
+<!-- THESIS -->
+<section class="section" id="thesis">
+  <div class="section-head">
+    <div class="section-tag">01 — Thesis</div>
+    <h2 class="section-title">Built to back the <span class="pink">best launchpad on Base</span>.</h2>
+    <p class="section-intro">
+      Flaunch is the most innovative coin launchpad on Base — a fair, builder-friendly
+      home for new tokens. Flaunch Fund exists to support that ecosystem: accumulating,
+      stewarding, and amplifying the coins that launch there.
+    </p>
+  </div>
+
+  <div class="cards-grid">
+    <div class="card">
+      <div class="card-num">i.</div>
+      <h3>Believe in Flaunch</h3>
+      <p>Flaunch is doing the most interesting work in coin launches on Base — fair distribution, automated LPs, programmable fees. The Fund is a long-term bet on that thesis playing out.</p>
+    </div>
+    <div class="card">
+      <div class="card-num">ii.</div>
+      <h3>Back the builders</h3>
+      <p>The reserve accumulates Flaunch-launched coins to provide a consistent, onchain show of support for projects building inside the Flaunch ecosystem — patient capital that doesn't dump.</p>
+    </div>
+    <div class="card">
+      <div class="card-num">iii.</div>
+      <h3>Grow with the ecosystem</h3>
+      <p>$FF aligns holders with Flaunch's success. As the launchpad grows, so does the relevance of the reserve — and tile holders earn ETH fees and coin airdrops as that flywheel spins.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TAKEOVER -->
+<section class="section" id="takeover" style="padding-top:0;">
+  <div class="section-head">
+    <div class="section-tag">02 — Earn</div>
+    <h2 class="section-title">Earn <span class="pink">ETH</span> from $FF trading fees.</h2>
+    <p class="section-intro">
+      Through Takeover.fun, the $FF Uniswap LP is split into a 12×12 grid of tiles.
+      Hold a tile, earn your pro-rata share of the trading fees from every $FF swap —
+      paid out in <strong style="color:var(--pink); font-weight:600;">ETH</strong> —
+      and get randomly airdropped Flaunch coins straight from the reserve.
+    </p>
+  </div>
+
+  <div class="takeover">
+    <div class="takeover-visual" aria-hidden="true">
+      <div class="takeover-grid" id="grid"></div>
+      <div class="takeover-overlay">
+        <span>Grid <span class="grid-num">#20</span> · 144 tiles</span>
+        <span class="live-text">Yield Live</span>
+      </div>
+    </div>
+
+    <div class="takeover-content">
+      <h3>One tile. <span class="pink">One seat at the LP.</span></h3>
+      <p>
+        Every time someone trades $FF on Uniswap, the pool collects a fee in ETH.
+        Tile holders on the Takeover grid receive their pro-rata share of those ETH
+        fees — automatically, for as long as they hold.
+      </p>
+
+      <div class="fee-flow">
+        <div class="fee-step">
+          <div class="fee-step-label">01 / Trade</div>
+          <div class="fee-step-text">$FF traded on Uniswap</div>
+        </div>
+        <div class="fee-step">
+          <div class="fee-step-label">02 / Pool</div>
+          <div class="fee-step-text">ETH fees accrue onchain</div>
+        </div>
+        <div class="fee-step">
+          <div class="fee-step-label">03 / Tile</div>
+          <div class="fee-step-text">Holders earn ETH pro-rata</div>
+        </div>
+      </div>
+
+      <p>
+        Tiles are scarce — only 144 exist per grid — and trade on an open market.
+        More $FF volume means more ETH fees, and every tile compounds your claim.
+      </p>
+
+      <div class="airdrop-callout">
+        <div class="airdrop-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L4 7v3c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V7l-8-5z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" fill="currentColor" fill-opacity="0.15"/>
+            <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="airdrop-text">
+          <strong>+ Airdrops</strong>
+          <p>
+            On top of the ETH fees, tile holders are also eligible for random airdrops
+            of Flaunch coins directly from the Flaunch Fund reserve. Hold a tile, earn
+            ETH, and get surprise coin drops from the treasury.
+          </p>
+        </div>
+      </div>
+
+      <a href="https://takeover.fun/board/0x5089da80219b1d8bdb7020fd93d32fa98b39f38c-20" target="_blank" rel="noopener" class="btn primary" style="margin-top:8px;">
+        <img class="btn-icon" src="takeover.png" alt="" aria-hidden="true" />
+        Open the Takeover Grid <span class="arrow">↗</span>
+      </a>
+
+      <p class="fine-print">
+        <strong>Note:</strong> Yields and airdrops depend on $FF trading volume,
+        tile ownership, and reserve discretion, and are not guaranteed. Tile prices
+        and fee distribution are governed entirely by the Takeover.fun protocol on Base.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- MECHANICS -->
+<section class="section" id="mechanics" style="padding-top:0;">
+  <div class="section-head">
+    <div class="section-tag">03 — Mechanics</div>
+    <h2 class="section-title">A <span class="pink">flywheel</span> for the Flaunch ecosystem.</h2>
+    <p class="section-intro">
+      Volume on Flaunch grows the value of the Takeover tiles. Tile activity generates
+      revenue for the Fund. The Fund redeploys that revenue into more Flaunch coins —
+      and routes some of those coins back to tile holders as airdrops.
+    </p>
+  </div>
+
+  <div class="pillars">
+    <ol class="pillar-list">
+      <li>
+        <div class="pillar-num">01</div>
+        <div>
+          <div class="pillar-title">Trading volume powers the tiles</div>
+          <p class="pillar-desc">Every $FF swap on Flaunch's Uniswap pool generates LP fees in ETH. Those ETH fees flow to the 100 Takeover tiles pro-rata — so the more $FF trades, the more ETH each tile earns.</p>
+        </div>
+      </li>
+      <li>
+        <div class="pillar-num">02</div>
+        <div>
+          <div class="pillar-title">The Fund earns from swap & tile taxes</div>
+          <p class="pillar-desc">Flaunch Fund's revenue comes from taxes on $FF swaps and on Takeover tile transactions. Every trade and every tile change of hands feeds the treasury.</p>
+        </div>
+      </li>
+      <li>
+        <div class="pillar-num">03</div>
+        <div>
+          <div class="pillar-title">100% reinvested into Flaunch coins</div>
+          <p class="pillar-desc">All revenue is redeployed into the reserve — used to accumulate newer Flaunch launches and bluechip Flaunch-native coins. Capital recycles into the ecosystem, never out of it.</p>
+        </div>
+      </li>
+      <li>
+        <div class="pillar-num">04</div>
+        <div>
+          <div class="pillar-title">Reserve airdrops back to tile holders</div>
+          <p class="pillar-desc">Periodically, coins from the reserve are airdropped directly to Takeover tile holders. The flywheel completes: the Fund accumulates for the ecosystem, then shares the upside with the people holding the tiles.</p>
+        </div>
+      </li>
+    </ol>
+
+    <aside class="quote-block">
+      <div class="quote-mark">"</div>
+      <p>Volume builds the tiles. The tiles fund the reserve. The reserve buys the ecosystem. And the ecosystem comes back to the tiles.</p>
+      <div class="quote-attr">— Flaunch Fund Charter</div>
+    </aside>
+  </div>
+</section>
+
+<!-- TOKEN -->
+<section class="section" id="token" style="padding-top:0;">
+  <div class="section-head">
+    <div class="section-tag">04 — Token</div>
+    <h2 class="section-title">The <span class="pink">Flaunch Fund</span> token.</h2>
+    <p class="section-intro">
+      $FF is how the world participates in the strategic reserve's story. One contract,
+      on Base, fully verifiable.
+    </p>
+  </div>
+
+  <div class="panel">
+    <div class="panel-header">
+      <span class="live">$FF Token · Verified</span>
+      <span>ERC-20 · Base</span>
+    </div>
+    <div class="panel-body">
+      <div class="panel-row">
+        <div class="panel-row-label">Contract</div>
+        <div class="panel-row-value">0xcF14464cB91b78f6725ec1dd3f957222E11dF3F5</div>
+        <button class="copy-btn" data-copy="0xcF14464cB91b78f6725ec1dd3f957222E11dF3F5">Copy</button>
+      </div>
+      <div class="panel-row">
+        <div class="panel-row-label">Symbol</div>
+        <div class="panel-row-value big">$FF</div>
+        <span class="copy-btn static">Strategic</span>
+      </div>
+      <div class="panel-row">
+        <div class="panel-row-label">Network</div>
+        <div class="panel-row-value">Base · Chain ID 8453</div>
+        <a class="copy-btn" href="https://flaunch.gg/base/coins/0xcF14464cB91b78f6725ec1dd3f957222E11dF3F5" target="_blank" rel="noopener">View on Flaunch ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVE -->
+<section class="section" id="reserve" style="padding-top:0;">
+  <div class="section-head">
+    <div class="section-tag">05 — Reserve</div>
+    <h2 class="section-title">The wallet, in <span class="pink">plain sight</span>.</h2>
+    <p class="section-intro">
+      No offchain custody. No quarterly reports. The strategic reserve lives at a single
+      Base address — readable by anyone, auditable at any block.
+    </p>
+  </div>
+
+  <div class="panel">
+    <div class="panel-header">
+      <span class="live">Reserve Wallet</span>
+      <span>Base · Block synced</span>
+    </div>
+    <div class="panel-body" itemscope itemtype="https://schema.org/FinancialProduct">
+      <div class="panel-row" data-agent-fact="reserve-wallet">
+        <div class="panel-row-label">Reserve Address <span class="badge solid">Primary</span></div>
+        <div class="panel-row-value" data-address-type="wallet" data-chain="base" data-chain-id="8453" itemprop="identifier">0x1Abc2b1086359d70c1293F011571C21496e73Ab9</div>
+        <button class="copy-btn" data-copy="0x1Abc2b1086359d70c1293F011571C21496e73Ab9">Copy</button>
+      </div>
+      <div class="panel-row" data-agent-fact="token-contract">
+        <div class="panel-row-label">Token Contract <span class="badge pink-solid">$FF</span></div>
+        <div class="panel-row-value" data-address-type="erc20" data-chain="base" data-chain-id="8453" data-token-symbol="FF">0xcF14464cB91b78f6725ec1dd3f957222E11dF3F5</div>
+        <button class="copy-btn" data-copy="0xcF14464cB91b78f6725ec1dd3f957222E11dF3F5">Copy</button>
+      </div>
+      <div class="panel-row" data-agent-fact="network">
+        <div class="panel-row-label">Network</div>
+        <div class="panel-row-value big" data-chain="base" data-chain-id="8453">Base · Chain ID 8453</div>
+        <a class="copy-btn" href="https://basescan.org/address/0x1Abc2b1086359d70c1293F011571C21496e73Ab9" target="_blank" rel="noopener">Open Explorer ↗</a>
+      </div>
+      <div class="panel-row" data-agent-fact="mandate">
+        <div class="panel-row-label">Mandate</div>
+        <div class="panel-row-value italic">Accumulate Flaunch ecosystem coins, generate revenue from $FF activity, redistribute to tile holders.</div>
+        <span class="copy-btn static">Charter</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <span class="logo-mark" aria-label="Flaunch Fund">
+            <svg viewBox="0 0 657 429" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use href="#ff-logo"/></svg>
+          </span>
+          Flaunch Fund
+        </a>
+        <p>Strategic Flaunch reserve on Base. Hold a Takeover tile, earn ETH from $FF trading fees, plus periodic Flaunch coin airdrops.</p>
+        <a href="https://x.com/TheFlaunchFund" target="_blank" rel="noopener" class="footer-social">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><use href="#x-logo"/></svg>
+          Follow @TheFlaunchFund
+        </a>
+      </div>
+      <div class="footer-col">
+        <h4>Reserve</h4>
+        <ul>
+          <li><a href="https://basescan.org/address/0x1Abc2b1086359d70c1293F011571C21496e73Ab9" target="_blank" rel="noopener">Wallet</a></li>
+          <li><a href="#thesis">Thesis</a></li>
+          <li><a href="#mechanics">Mechanics</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Token</h4>
+        <ul>
+          <li><a href="https://flaunch.gg/base/coins/0xcF14464cB91b78f6725ec1dd3f957222E11dF3F5" target="_blank" rel="noopener">Trade $FF on Flaunch</a></li>
+          <li><a href="https://takeover.fun/board/0x5089da80219b1d8bdb7020fd93d32fa98b39f38c-20" target="_blank" rel="noopener">Takeover Grid</a></li>
+          <li><a href="https://www.base.org" target="_blank" rel="noopener">About Base</a></li>
+          <li><a href="AGENT_GUIDE.html" target="_blank" rel="noopener">AI Agent Guide</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Disclosure</h4>
+        <ul class="footer-disclosure">
+          <li>Not financial advice</li>
+          <li>DYOR · always</li>
+          <li>Onchain ≠ insured</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© Flaunch Fund · 2026</span>
+      <span class="built-on">
+        <span class="built-mark"></span>
+        Built on Base
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile nav toggle
+  (function navToggle() {
+    const btn = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('primary-nav');
+    if (!btn || !menu) return;
+
+    const open = (state) => {
+      btn.setAttribute('aria-expanded', state ? 'true' : 'false');
+      btn.setAttribute('aria-label', state ? 'Close menu' : 'Open menu');
+      menu.classList.toggle('is-open', state);
+    };
+
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      open(menu.classList.contains('is-open') ? false : true);
+    });
+
+    // Close when a link inside is tapped
+    menu.addEventListener('click', (e) => {
+      const a = e.target.closest('a');
+      if (a) open(false);
+    });
+
+    // Close on outside click / escape
+    document.addEventListener('click', (e) => {
+      if (!menu.contains(e.target) && !btn.contains(e.target) && menu.classList.contains('is-open')) {
+        open(false);
+      }
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && menu.classList.contains('is-open')) open(false);
+    });
+
+    // Close if viewport grows past mobile breakpoint
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 900 && menu.classList.contains('is-open')) open(false);
+    });
+  })();
+
+  // Decorative takeover grid — 12×12 with scattered tile variety + live trading flashes
+  (function buildGrid() {
+    const grid = document.getElementById('grid');
+    if (!grid) return;
+
+    const SIZE = 12;
+    const TOTAL = SIZE * SIZE;  // 144
+
+    // Pre-determined "empty" positions — sprinkled across the grid for negative space.
+    // Picked to feel organic, not on a regular pattern.
+    const emptyIdx = new Set([
+      3, 11, 18, 25, 40, 50, 61, 72, 85, 99, 108, 119, 130, 138,
+      7, 27, 56, 88, 115, 142
+    ]);
+
+    // Build tiles with evenly scattered visual variety (no center bias).
+    for (let i = 0; i < TOTAL; i++) {
+      const t = document.createElement('div');
+      t.className = 'tile';
+      t.style.setProperty('--i', i);
+
+      if (emptyIdx.has(i)) {
+        t.classList.add('empty');
+      } else {
+        // Deterministic pseudo-random per tile so the layout is stable across renders.
+        const r = Math.abs((Math.sin(i * 12.9898) * 43758.5453) % 1);
+
+        // Even distribution across the six tiers. Brighter tiers are rarer
+        // so the visual still has obvious "hero" tiles without forming a heatmap.
+        if (r > 0.95)      t.classList.add('peak');     // ~5% brightest
+        else if (r > 0.85) t.classList.add('hot');      // ~10%
+        else if (r > 0.65) t.classList.add('bright');   // ~20%
+        else if (r > 0.45) t.classList.add('warm');     // ~20%
+        else if (r > 0.20) t.classList.add('mid');      // ~25%
+        else               t.classList.add('dim');      // ~20%
+
+        // Sparse pulse — only on the brightest tiles, and only sometimes
+        if ((t.classList.contains('peak') || t.classList.contains('hot')) && r > 0.9) {
+          t.classList.add('pulse');
+        }
+      }
+
+      grid.appendChild(t);
+    }
+
+    // Live "trading activity" — randomly flash a tile every 0.9–2.2s.
+    // Weighted toward bright tiles so the action draws the eye.
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduced) {
+      const allTiles = Array.from(grid.querySelectorAll('.tile:not(.empty)'));
+      const brightTiles = Array.from(grid.querySelectorAll('.tile.peak, .tile.hot, .tile.bright'));
+
+      const randomFlash = () => {
+        // 70% chance to flash a bright tile, 30% any non-empty tile
+        const pool = Math.random() < 0.7 && brightTiles.length ? brightTiles : allTiles;
+        const tile = pool[Math.floor(Math.random() * pool.length)];
+        if (tile) {
+          tile.classList.remove('flash');
+          void tile.offsetWidth;  // force reflow
+          tile.classList.add('flash');
+          setTimeout(() => tile.classList.remove('flash'), 1100);
+        }
+        const nextDelay = 900 + Math.random() * 1300;
+        setTimeout(randomFlash, nextDelay);
+      };
+
+      // Kick off after grid entry animation
+      setTimeout(randomFlash, 1800);
+    }
+  })();
+
+  // ============ LIVE $FF PRICE + MARKET CAP — subtle nav ticker ============
+  // Strategy: try multiple GeckoTerminal endpoints in sequence so we get data
+  // even if one shape returns nulls. Falls back gracefully on every error.
+  (function navTicker() {
+    const ticker = document.getElementById('nav-ticker');
+    if (!ticker) return;
+
+    const TOKEN = '0xcF14464cB91b78f6725ec1dd3f957222E11dF3F5';
+    const POOL = '0x5470444e6d3ab394679268f46b442a92932d944f7f718f5b6d407dcdcb65a019';
+    const REFRESH_MS = 60 * 1000;
+
+    const $price = document.getElementById('nav-ticker-price');
+    const $change = document.getElementById('nav-ticker-change');
+    const $mcap = document.getElementById('nav-ticker-mcap');
+
+    // Defensive number parsing — handles strings, scientific notation, null, NaN.
+    const toNum = (v) => {
+      if (v === null || v === undefined || v === '') return null;
+      const n = typeof v === 'number' ? v : parseFloat(String(v));
+      return isFinite(n) ? n : null;
+    };
+
+    // Format a USD price intelligently. Uses subscript-zero notation for
+    // micro-cap prices (the DEX convention: $0.0₄482 = $0.00004482).
+    const fmtPrice = (raw) => {
+      const n = toNum(raw);
+      if (n === null || n <= 0) return null;
+      if (n >= 1000) return '$' + n.toLocaleString('en-US', { maximumFractionDigits: 0 });
+      if (n >= 1) return '$' + n.toFixed(2);
+      if (n >= 0.01) return '$' + n.toFixed(4);
+      if (n >= 0.0001) return '$' + n.toFixed(6);
+      const str = n.toFixed(20);
+      const decimals = (str.split('.')[1] || '');
+      let zeros = 0;
+      while (zeros < decimals.length && decimals[zeros] === '0') zeros++;
+      if (zeros === 0) return '$' + n.toFixed(6);
+      const sig = decimals.slice(zeros, zeros + 3).replace(/0+$/, '') || '0';
+      const sub = ['₀','₁','₂','₃','₄','₅','₆','₇','₈','₉'];
+      const subZeros = String(zeros).split('').map(d => sub[+d]).join('');
+      return `$0.0${subZeros}${sig}`;
+    };
+
+    const fmtChange = (raw) => {
+      const n = toNum(raw);
+      if (n === null) return null;
+      const sign = n > 0 ? '+' : '';
+      const dir = n > 0 ? 'up' : (n < 0 ? 'down' : '');
+      return { text: `${sign}${n.toFixed(2)}%`, dir };
+    };
+
+    // Compact market cap: $1.23M, $456K, etc.
+    const fmtMcap = (raw) => {
+      const n = toNum(raw);
+      if (n === null || n <= 0) return null;
+      if (n >= 1_000_000_000) return '$' + (n / 1_000_000_000).toFixed(2) + 'B';
+      if (n >= 1_000_000) return '$' + (n / 1_000_000).toFixed(2) + 'M';
+      if (n >= 1_000) return '$' + (n / 1_000).toFixed(1) + 'K';
+      return '$' + n.toFixed(0);
+    };
+
+    const renderError = () => {
+      ticker.classList.add('is-error');
+      if (!$price.textContent || $price.textContent === '—') $price.textContent = 'n/a';
+      if (!$mcap.textContent || $mcap.textContent === '—') $mcap.textContent = 'n/a';
+      $change.textContent = '';
+      $change.classList.remove('up', 'down');
+    };
+
+    const render = (data) => {
+      const { price, change, mcap } = data;
+      let didShow = false;
+
+      if (price !== null) { $price.textContent = price; didShow = true; }
+      if (change) {
+        $change.textContent = change.text;
+        $change.classList.remove('up', 'down');
+        if (change.dir) $change.classList.add(change.dir);
+      } else {
+        $change.textContent = '';
+        $change.classList.remove('up', 'down');
+      }
+      if (mcap !== null) { $mcap.textContent = mcap; didShow = true; }
+
+      if (didShow) {
+        ticker.classList.remove('is-error');
+      } else {
+        renderError();
+      }
+    };
+
+    // Fetch helper with timeout so a hanging request doesn't block forever.
+    const fetchJson = async (url, timeout = 8000) => {
+      const ctrl = new AbortController();
+      const id = setTimeout(() => ctrl.abort(), timeout);
+      try {
+        const res = await fetch(url, {
+          headers: { Accept: 'application/json' },
+          cache: 'no-store',
+          signal: ctrl.signal,
+        });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        return await res.json();
+      } finally {
+        clearTimeout(id);
+      }
+    };
+
+    // PRIMARY: Direct pool endpoint. Most authoritative — we know this pool exists,
+    // no dependency on whether the token is indexed at the token-level.
+    const fetchFromPoolDirect = async () => {
+      const url = `https://api.geckoterminal.com/api/v2/networks/base/pools/${POOL}`;
+      const json = await fetchJson(url);
+      const pool = json?.data?.attributes;
+      if (!pool) return null;
+
+      const price = fmtPrice(pool.base_token_price_usd);
+      const change = fmtChange(pool?.price_change_percentage?.h24);
+      // For Flaunch coins, market_cap_usd is almost always null,
+      // so prefer fdv_usd (which is what every DEX UI displays for these tokens).
+      const mcap = fmtMcap(pool.fdv_usd) || fmtMcap(pool.market_cap_usd);
+      return { price, change, mcap };
+    };
+
+    // BACKUP 1: Token endpoint with top_pools.
+    const fetchFromTokenEndpoint = async () => {
+      const url = `https://api.geckoterminal.com/api/v2/networks/base/tokens/${TOKEN}?include=top_pools`;
+      const json = await fetchJson(url);
+      const attrs = json?.data?.attributes;
+      if (!attrs) return null;
+
+      const pools = (json?.included || []).filter(x => x.type === 'pool');
+      let topPool = null;
+      for (const p of pools) {
+        const vol = toNum(p?.attributes?.volume_usd?.h24);
+        if (vol !== null && vol > 0) { topPool = p.attributes; break; }
+      }
+      if (!topPool && pools.length) topPool = pools[0]?.attributes;
+
+      const price = fmtPrice(attrs.price_usd) || (topPool && fmtPrice(topPool.base_token_price_usd));
+      const change = topPool ? fmtChange(topPool?.price_change_percentage?.h24) : null;
+      const mcap = fmtMcap(attrs.fdv_usd) || fmtMcap(attrs.market_cap_usd) ||
+                   (topPool && (fmtMcap(topPool.fdv_usd) || fmtMcap(topPool.market_cap_usd)));
+
+      return { price, change, mcap };
+    };
+
+    // BACKUP 2: search all pools containing this token. Last resort.
+    const fetchFromPoolSearch = async () => {
+      const url = `https://api.geckoterminal.com/api/v2/networks/base/tokens/${TOKEN}/pools`;
+      const json = await fetchJson(url);
+      const pools = (json?.data || []).map(p => p.attributes).filter(Boolean);
+      if (!pools.length) return null;
+      pools.sort((a, b) => (toNum(b.volume_usd?.h24) || 0) - (toNum(a.volume_usd?.h24) || 0));
+      const topPool = pools[0];
+      const price = fmtPrice(topPool.base_token_price_usd);
+      const change = fmtChange(topPool?.price_change_percentage?.h24);
+      const mcap = fmtMcap(topPool.fdv_usd) || fmtMcap(topPool.market_cap_usd);
+      return { price, change, mcap };
+    };
+
+    const update = async () => {
+      // Try direct pool first (we know the exact pool ID), then fallbacks.
+      const sources = [fetchFromPoolDirect, fetchFromTokenEndpoint, fetchFromPoolSearch];
+      for (const source of sources) {
+        try {
+          const data = await source();
+          if (data && (data.price !== null || data.mcap !== null)) {
+            render(data);
+            return;
+          }
+        } catch (err) {
+          // try next source
+        }
+      }
+      // All sources failed or returned nothing usable
+      if (!ticker.classList.contains('is-error')) {
+        console.warn('Nav ticker: no price data available from any source yet');
+      }
+      renderError();
+    };
+
+    update();
+    setInterval(update, REFRESH_MS);
+  })();
+
+  // Copy-to-clipboard
+  document.querySelectorAll('[data-copy]').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const val = btn.getAttribute('data-copy');
+      try {
+        await navigator.clipboard.writeText(val);
+      } catch (e) {
+        const ta = document.createElement('textarea');
+        ta.value = val;
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); } catch (e2) {}
+        document.body.removeChild(ta);
+      }
+      const orig = btn.textContent;
+      btn.textContent = 'Copied';
+      btn.classList.add('copied');
+      setTimeout(() => {
+        btn.textContent = orig;
+        btn.classList.remove('copied');
+      }, 1600);
+    });
+  });
+</script>
+
+</body>
+</html>
